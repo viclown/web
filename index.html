@@ -2,93 +2,106 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>CV Viktoria</title>
-    <meta name="keywords" content="CV, резюме, портфолио, Захарова Виктория Андреевна, resume, portfolio, algotrading, ml">
-    <meta name="description" content="CV for Zakharova Viktoria">
+    <title>bubbly</title>
+    <meta name="keywords" content="bubbly, bath, bath bombs, chill, accessories">
+    <meta name="description" content="bubbly">
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <section>
-            <h2>home</h2>
-            <nav>
-                <ol style="list-style: none">
-                    <li>home</li>
-                    <li>education & work experience</li>
-                    <li>skills</li>
-                </ol>
-            </nav>
-            zakharova viktoriia
-            contacts
-        </section>
+    <header class="header" id="page1">
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">bubble</div>
+                <nav class="navigation">
+                    <a class="nav_link" href="#page1">home</a>
+                    <a class="nav_link" href="#page2">our collection</a>
+                    <a class="nav_link" href="#page3">contacts</a>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            education & work experience
-        <h1>
-            education
-        </h1>
-        <h2>
-            main education
-        </h2>
-        <ol style="list-style: none">
-            <li>gymnasium 1, cheboksary</li>
-            <li>itmo university, st.petersburg</li>
-        </ol>
-        <h2>
-            courses & clubs
-        </h2>
-        <ol style="list-style: none">
-            <li>language school ankor, cheboksary</li>
-            <li>computer vision, samsung research online course</li>
-        </ol>
-        <section>
-            <h2>my work experience as tutor</h2>
-            <article>
-                my tutor-profile on profi.ru
-            </article>
-            <aside>
-                my students' reviews of our lessons
-            </aside>
+        <div class="intro">
+            <div class="container">
+                <div class="intro_inner">
+                    <h1 class="name">bubbly</h1>
+                    <h2 class="slogan">become bubbly with our bath bombs!</h2>
+                </div>
+            </div>
+        </div>
+        <section class="collection" id="page2">
+            <div class="container">
+                <div class="section_header">
+                    <h3 class="section_suptitle">treat yourself with a long, hot soak in a bath!</h3>
+                    <h2 class="section_title">our collection</h2>
+                </div>
+                <div class="bombs">
+                    <div class="bomb_item">
+                        <div class="bomb_image">
+                            <img src="./images/bombs/80svibe.png" alt="">
+                        </div>
+                        <div class="bomb_name">
+                            80's vibe
+                        </div>
+                    </div>
+                    <div class="bomb_item">
+                        <div class="bomb_image">
+                            <img src="./images/bombs/lucky ducky.png" alt="">
+                        </div>
+                        <div class="bomb_name">
+                            lucky-ducky
+                        </div>
+                    </div>
+                    <div class="bomb_item">
+                        <div class="bomb_image">
+                            <img src="./images/bombs/bubbly.png" alt="">
+                        </div>
+                        <div class="bomb_name">
+                            bubbly
+                        </div>
+                    </div>
+                    <div class="bomb_item">
+                        <div class="bomb_image">
+                            <img src="./images/bombs/frog.png" alt="">
+                        </div>
+                        <div class="bomb_name">
+                            it's not easy being a frog
+                        </div>
+                    </div>
+                    <div class="bomb_item">
+                        <div class="bomb_image">
+                            <img src="./images/bombs/button.png" alt="">
+                        </div>
+                        <div class="bomb_name">
+                            bomb-jamin button
+                        </div>
+                    </div>
+                    <div class="bomb_item">
+                        <div class="bomb_image">
+                            <img src="./images/bombs/meltingdown.png" alt="">
+                        </div>
+                        <div class="bomb_name">
+                            melting down
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        </section>
-        <section>
-            <h2>ducks, code and other useless stuff</h2>
-                <pre>
-  _      _      _
->(.)__ <(.)__ =(.)__
- (___/  (___/  (___/
-                </pre>
-        </section>
-        <pre><code>
-            hometown = input()
-            if hometown == 'чебоксары':
-                print('родные чебоксары')
-        </code></pre>
-
-        <blockquote>
-            <p><i>БД</i> - <b>единственное</b> место, где надо думать. <br>
-                В <i>вебе</i> и <i>мобилках</i> думать не надо - сидишь, пишешь код. <br>
-                В <i>ML</i> даже не надо думать о чём думать - прикрутил библиотеку, построил цветной трёхмерный plot и сидишь довольный</p>
-            <cite>Маятин Александр Владимирович</cite>
-        </blockquote>
-
-        <strong>Формулы дота 2.</strong><br>
-        <ol style="list-style-type: square;">
-            <li><b>Скорость поворота</b> = 1, это <ins>поворот на один радиан (57,296<sup>o</sup>) за 30 миллисекунд,</ins> <br>
-                что соответствует (<sup>100</sup>/<sub>3</sub>) / (2*3,14159) ~ 5,3 оборота вокруг своей оси (на 360<sup>o</sup>) за 1 секунду. <br></li>
-            <li><del>Скорость пика фантомки в турбо, если я не забанила = 0,000001 секунда</del></li>
-        </ol>
     </main>
-    <footer>
-        <section>
-            <h1>contacts</h1>
-            <ol style="list-style-type: none;">
-                <li><a href="https://github.com/viclown" target="_blank">my git: viclown</a></li>
-                <li><a href="https://t.me/shizvik" target="_blank">my telegram: shizvik</a></li>
-                <li>my phone: +7 937 386 69 75</li>
-                <li>my email: klappy@mail.ru</li>
-            </ol>
-        </section>
+    <footer class="footer" id="page3">
+        <div class="container">
+            <section class="contacts">
+                <div class="contacts_header">
+                    <h1>do you have any questions?</h1>
+                </div>
+                <ol class='contact_list'>
+                    <li>call us: +7 123 456 78 90</li>
+                    <li>text us: bubbly@mail.ru</li>
+                </ol>
+            </section>
+        </div>
     </footer>
 </body>
 </html>
