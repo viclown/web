@@ -207,7 +207,7 @@ caption {
 
 @media only screen
 and (max-width: 1000px)
-and (min-width: 500px) {
+and (min-width: 480px) {
     .body {
         font-family: "Chilanka", cursive;
     }
@@ -247,7 +247,7 @@ and (min-width: 500px) {
 }
 
 @media only screen
-and (max-width: 500px) {
+and (max-width: 480px) {
     .body {
         font-family: "Chilanka", cursive;
     }
@@ -262,7 +262,7 @@ and (max-width: 500px) {
     }
 
     .slogan {
-        font-size: 40px;
+        font-size: 80px;
     }
 
     table {
