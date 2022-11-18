@@ -204,7 +204,7 @@ caption {
     font-size: 24px;
 }
 
-@media handheld {
+@media only screen and (max-device-width: 480px) {
     .body {
         font-family: "Chilanka", cursive;
     }
