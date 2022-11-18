@@ -89,12 +89,12 @@ body {
     text-align: center;
 }
 
-.section_suptitle {
+.suptitle {
     font-family: "URW Chancery L", cursive;
     font-size: 24px;
 }
 
-.section_title {
+.title {
     font-family: "Chewy", sans-serif;
     font-size: 80px;
     font-weight: 800;
@@ -110,14 +110,15 @@ body {
 }
 
 .bomb_item {
-    width: 33%;
+    width: 400px;
 }
 
 .bomb_image img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 20px;
+
     box-shadow: 0 0 5px 2px pink;
 }
 
@@ -128,6 +129,59 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.table_class {
+    padding: 40px 0;
+    background-color: #fed3dd;
+}
+
+.table_inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 90%;
+    margin: auto 5%;
+    grid-template-columns: 31% 23% 23% 23%;
+    font-size: 18px;
+}
+
+thead, tbody, tr {
+    display: contents;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    background-color: white;
+}
+
+td, th {
+    border: 1px solid #403e3e;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+    font-family: "URW Chancery L", cursive;
+    font-size: 20px;
+}
+
+th {
+    font-size: 24px;
+    background-color: #d4ffe4; /* #f99 */
+}
+
+tr:nth-child(even) td {
+    background-color: #fffcd4;
+}
+
+caption {
+    padding: 10px;
 }
 
 .footer {
