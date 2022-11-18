@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     margin: 0;
-    font-family: "Courier New", sans-serif;
+    font-family: "URW Chancery L", cursive;
     font-size: 15px;
     line-height: 1.25;
     text-align: left;
@@ -74,7 +74,6 @@ body {
 }
 
 .slogan {
-    font-family: "URW Chancery L", cursive;
     text-align: center;
 }
 
@@ -90,7 +89,6 @@ body {
 }
 
 .suptitle {
-    font-family: "URW Chancery L", cursive;
     font-size: 24px;
 }
 
@@ -104,7 +102,7 @@ body {
 
 .bombs {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #fff;
     flex-wrap: wrap;
 }
@@ -167,7 +165,6 @@ td, th {
     padding: 10px;
     text-align: center;
     vertical-align: center;
-    font-family: "URW Chancery L", cursive;
     font-size: 20px;
 }
 
@@ -204,6 +201,23 @@ caption {
 
 .contact_list {
     list-style-type: none;
-    font-family: "URW Chancery L", cursive;
     font-size: 24px;
+}
+
+@media handheld {
+    .body {
+        font-family: "Chilanka", cursive;
+    }
+
+    .nav_link {
+        font-size: 40px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .slogan {
+        font-size: 50px;
+    }
 }
