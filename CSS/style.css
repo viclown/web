@@ -6,6 +6,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.bomb_item a:-webkit-any-link {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.bomb_item a:hover {
+    color: salmon;
+}
+
 body {
     margin: 0;
     font-family: "URW Chancery L", cursive;
@@ -146,6 +156,8 @@ nav a:is(:link, :active, :visited).active {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .price {
@@ -226,6 +238,93 @@ caption {
 .loading_time {
     font-size: 20px;
     text-align: center;
+}
+
+/* description pages */
+
+.name_desc {
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    font-family: "Chewy", sans-serif;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.description {
+    margin-left: 50px;
+    font-size: 24px;
+    text-align: justify;
+    vertical-align: center;
+}
+
+.text_and_image {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.bomb_image_desc img {
+    width: 500px;
+    box-shadow: 0 0 5px 2px pink;
+}
+
+.info {
+    background-color: pink;
+    padding: 15px;
+}
+
+.info_switch {
+    display: none;
+}
+
+.info_body {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 15px;
+    padding-top: 10px;
+    text-transform: lowercase;
+}
+
+.info_switch:checked~.info_body {
+    max-height: 500px;
+}
+
+.info_headline {
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 0.2em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    color: black;
+    background: pink;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.button::before {
+    content: attr(data-char);
+    font-size: 1em;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white
 }
 
 @media only screen
