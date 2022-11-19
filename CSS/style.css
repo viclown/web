@@ -60,9 +60,8 @@ nav a:hover {
 }
 
 nav a:is(:link, :active, :visited).active {
-    background-color: #ff99c3;
+    background-color: salmon;
     color: black;
-    text-decoration: underline wavy black 0.1rem;
 }
 
 /*
