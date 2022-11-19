@@ -5,26 +5,28 @@
     <title>bubbly</title>
     <meta name="keywords" content="bubbly, bath, bath bombs, chill, accessories">
     <meta name="description" content="bubbly">
-    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="stylesheet" href="../CSS/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Chilanka&display=swap" rel="stylesheet">
+    <script src="../JS/page_loading_time.js"></script>
+    <script defer src="../JS/active_button_menu.js"></script>
 </head>
 
 <body>
-    <header class="header" id="page1">
+    <header class="header">
         <div class="container">
             <div class="header_inner">
                 <div class="logo">bubbly</div>
                 <nav class="navigation">
-                    <a class="nav_link" href="#page1">home</a>
-                    <a class="nav_link" href="#page2">our collection</a>
-                    <a class="nav_link" href="#page3">price</a>
-                    <a class="nav_link" href="#page4">contacts</a>
+                    <a href="./index.html">home</a>
+                    <a href="./collection.html">our collection</a>
+                    <a href="./price.html">price</a>
+                    <a href="./contacts.html">contacts</a>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <div class="intro">
+        <div class="intro" id="page1">
             <div class="container">
                 <div class="intro_inner">
                     <h1 class="name">bubbly</h1>
@@ -41,7 +43,7 @@
                 <div class="bombs">
                     <div class="bomb_item">
                         <div class="bomb_image">
-                            <img src="./images/bombs/80svibe.png" alt="">
+                            <img src="../images/bombs/80svibe.png" alt="">
                         </div>
                         <div class="bomb_name">
                             80's vibe
@@ -49,7 +51,7 @@
                     </div>
                     <div class="bomb_item">
                         <div class="bomb_image">
-                            <img src="./images/bombs/lucky ducky.png" alt="">
+                            <img src="../images/bombs/lucky%20ducky.png" alt="">
                         </div>
                         <div class="bomb_name">
                             lucky-ducky
@@ -57,7 +59,7 @@
                     </div>
                     <div class="bomb_item">
                         <div class="bomb_image">
-                            <img src="./images/bombs/bubbly.png" alt="">
+                            <img src="../images/bombs/bubbly.png" alt="">
                         </div>
                         <div class="bomb_name">
                             bubbly
@@ -65,7 +67,7 @@
                     </div>
                     <div class="bomb_item">
                         <div class="bomb_image">
-                            <img src="./images/bombs/frog.png" alt="">
+                            <img src="../images/bombs/frog.png" alt="">
                         </div>
                         <div class="bomb_name">
                             it's not easy being a frog
@@ -73,7 +75,7 @@
                     </div>
                     <div class="bomb_item">
                         <div class="bomb_image">
-                            <img src="./images/bombs/button.png" alt="">
+                            <img src="../images/bombs/button.png" alt="">
                         </div>
                         <div class="bomb_name">
                             bomb-jamin button
@@ -81,7 +83,7 @@
                     </div>
                     <div class="bomb_item">
                         <div class="bomb_image">
-                            <img src="./images/bombs/meltingdown.png" alt="">
+                            <img src="../images/bombs/meltingdown.png" alt="">
                         </div>
                         <div class="bomb_name">
                             melting down
@@ -90,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <div class="table_class" id="page3">
+        <section class="price" id="page3">
             <div class="container">
                 <div class="table_inner">
                     <h1 class="suptitle">buy more - pay less!</h1>
@@ -132,7 +134,7 @@
                     </tr>
                 </table>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer" id="page4">
         <div class="container">
@@ -145,6 +147,9 @@
                     <li>text us: bubbly@mail.ru</li>
                 </ol>
             </section>
+            <div class="loading_time">
+                <span id="load_time"></span>
+            </div>
         </div>
     </footer>
 </body>

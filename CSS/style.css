@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -16,13 +20,8 @@ body {
 
 .header {
     width: 100%;
-    position: absolute;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    position: fixed;
+    background-color: black;
 }
 
 .header_inner {
@@ -31,25 +30,46 @@ body {
     align-items: center;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .logo {
     vertical-align: center;
     font-family: "Chewy", sans-serif;
     font-size: 30px;
-    padding-left: 40px;
-    color: black;
-    padding-top: 20px;
+    padding: 2px 20px;
+    color: white;
 }
 
-.nav_link {
+nav a {
+    position: relative;
     display: inline-block;
     vertical-align: center;
     font-family: "Chewy", sans-serif;
     font-size: 30px;
-    color: black;
-    padding-right: 40px;
-    padding-top: 20px;
+    color: white;
+    padding: 2px 20px;
     text-decoration: none;
 }
+
+nav a:hover {
+    color: salmon;
+}
+
+nav a:is(:link, :active, :visited).active {
+    background-color: salmon;
+    color: black;
+    text-decoration: underline wavy black 0.15rem;
+}
+
+/*
+.intro:hover~.nav_link_1 {
+    color: salmon;
+}
+*/
 
 .intro {
     display: flex;
@@ -117,7 +137,6 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
-
     box-shadow: 0 0 5px 2px pink;
 }
 
@@ -130,7 +149,7 @@ body {
     margin-bottom: 20px;
 }
 
-.table_class {
+.price {
     padding: 40px 0;
     background-color: #fed3dd;
 }
@@ -203,6 +222,11 @@ caption {
 .contact_list {
     list-style-type: none;
     font-size: 24px;
+}
+
+.loading_time {
+    font-size: 20px;
+    text-align: center;
 }
 
 @media only screen
