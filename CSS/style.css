@@ -207,7 +207,7 @@ caption {
 
 @media only screen
 and (max-width: 1000px)
-and (min-width: 480px) {
+and (min-width: 510px) {
     .body {
         font-family: "Chilanka", cursive;
     }
@@ -247,7 +247,7 @@ and (min-width: 480px) {
 }
 
 @media only screen
-and (max-width: 480px) {
+and (max-width: 510px) {
     .header_inner {
         display: none;
     }
