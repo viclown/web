@@ -4,14 +4,17 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     margin: 0;
-    font-family: "URW Chancery L", cursive;
-    font-size: 15px;
+    font-family: "Chilanka", cursive;
+    font-style: normal;
+    font-size: 1rem;
     line-height: 1.25;
     text-align: left;
     background-color: white;
     color: black;
     font-weight: normal;
     text-transform: none;
+    text-indent: 1em;
+    letter-spacing: normal;
 }
 
 .header {
@@ -34,20 +37,19 @@ body {
 .logo {
     vertical-align: center;
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     padding-left: 40px;
     color: black;
-    padding-top: 20px;
 }
 
 .nav_link {
     display: inline-block;
     vertical-align: center;
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     color: black;
     padding-right: 40px;
-    padding-top: 20px;
+    padding-top: 15px;
     text-decoration: none;
 }
 
@@ -67,7 +69,7 @@ body {
 }
 
 .name {
-    font-size: 150px;
+    font-size: 10rem;
     font-weight: 800;
     text-align: center;
     font-family: "Chewy", sans-serif;
@@ -76,6 +78,7 @@ body {
 
 .slogan {
     text-align: center;
+    word-spacing: 2px;
 }
 
 .collection {
@@ -90,12 +93,13 @@ body {
 }
 
 .suptitle {
-    font-size: 24px;
+    font-size: 1.6rem;
+    word-spacing: 2px;
 }
 
 .title {
     font-family: "Chewy", sans-serif;
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
@@ -123,7 +127,7 @@ body {
 
 .bomb_name {
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
@@ -147,19 +151,14 @@ body {
     border-collapse: collapse;
     min-width: 90%;
     margin: auto 5%;
-    grid-template-columns: 31% 23% 23% 23%;
-    font-size: 18px;
+    grid-template-columns: repeat(4, auto);
+    font-size: 1.5rem;
+    border: 2px solid black;
+    background-color: white;
 }
 
 thead, tbody, tr {
     display: contents;
-}
-
-table {
-    border-collapse: collapse;
-    border: 2px solid black;
-    background-color: white;
-    font-size: 20px;
 }
 
 td, th {
@@ -170,7 +169,7 @@ td, th {
 }
 
 th {
-    font-size: 24px;
+    font-size: 1.6rem;
     background-color: #d4ffe4; /* #f99 */
 }
 
@@ -193,7 +192,7 @@ caption {
 
 .contacts_header {
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
@@ -202,7 +201,8 @@ caption {
 
 .contact_list {
     list-style-type: none;
-    font-size: 24px;
+    font-size: 1.6rem;
+    word-spacing: 2px;
 }
 
 @media only screen
@@ -213,36 +213,36 @@ and (min-width: 480px) {
     }
 
     .nav_link {
-        font-size: 23px;
-        padding-right: 20px;
+        font-size: 1.6rem;
+        padding-right: 1.25rem;
     }
 
     .logo {
-        font-size: 23px;
+        font-size: 1.6rem;
     }
 
     .slogan {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .suptitle {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .title {
-        font-size: 70px;
+        font-size: 5rem;
     }
 
     .contacts_header {
-        font-size: 25px;
+        font-size: 1.6rem;
     }
 
     table {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     .th {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
