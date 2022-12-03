@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 15px;
 }
 
 .logo {
@@ -49,7 +50,6 @@ body {
     font-size: 2rem;
     color: black;
     padding-right: 40px;
-    padding-top: 15px;
     text-decoration: none;
 }
 
@@ -213,12 +213,12 @@ and (min-width: 480px) {
     }
 
     .nav_link {
-        font-size: 1.6rem;
-        padding-right: 1.25rem;
+        font-size: 1.3rem;
+        padding-right: 8px;
     }
 
     .logo {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .slogan {
@@ -248,28 +248,39 @@ and (min-width: 480px) {
 
 @media only screen
 and (max-width: 480px) {
+    .header_inner {
+        display: none;
+    }
+
     .body {
         font-family: "Chilanka", cursive;
     }
 
-    .nav_link {
-        font-size: 25px;
-        padding-right: 20px;
-    }
-
-    .logo {
-        font-size: 25px;
+    .name {
+        font-size: 5rem;
     }
 
     .slogan {
-        font-size: 80px;
+        font-size: 1.5rem;
     }
 
-    table {
-        font-size: 18px;
+    .suptitle {
+        font-size: 1.1rem;
     }
 
-    .th {
-        font-size: 20px;
+    .title {
+        font-size: 3rem;
+    }
+
+    .table {
+        font-size: 1.2rem;
+    }
+
+    th {
+        font-size: 1.2rem;
+    }
+
+    .contacts_header {
+        font-size: 1.5rem;
     }
 }
