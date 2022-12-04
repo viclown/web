@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bubbly cart</title>
+    <meta name="keywords" content="bubbly, bath, bath bombs, chill, accessories">
+    <meta name="description" content="bubbly">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Chilanka&display=swap" rel="stylesheet">
+    <script src="JS/page_loading_time.js"></script>
+    <script defer src="JS/active_button_menu.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">bubbly</div>
+                <nav class="navigation">
+                    <a href="index.html#page1">home</a>
+                    <a href="./cart.html">cart</a>
+                </nav>
+            </div>
+        </div>
+        <div class="shopping-bag">
+            <div class="total-items-in-cart">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="app-bg">
+            <div class="left-side"></div>
+            <div class="right-side"></div>
+        </div>
+        <div class="products-list" id="products-list">
+            <div class="products">
+            </div>
+            <div class="cart">
+                <div class="cart-items">
+                </div>
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        Subtotal (0 items): $0
+                    </div>
+                    <div class="checkout">
+                        Proceed to checkout
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="JS/cart_products.js"></script>
+        <script src="JS/action.js"></script>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <section class="contacts">
+                <div class="contacts_header">
+                    <h1>do you have any questions?</h1>
+                </div>
+                <ol class='contact_list'>
+                    <li>call us: +7 123 456 78 90</li>
+                    <li>text us: bubbly@mail.ru</li>
+                </ol>
+            </section>
+            <div class="loading_time">
+                <span id="load_time"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
