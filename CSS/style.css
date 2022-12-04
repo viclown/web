@@ -434,7 +434,7 @@ html {
 }
 
 .products img {
-    width: 135px;
+    width: 180px;
 }
 
 .products .item {
@@ -448,15 +448,16 @@ html {
 
 .products .item .item-container {
     width: 250px;
-    height: 80%;
+    height: 280px;
     background-color: #000;
     border-radius: 25px;
     position: relative;
+    margin-bottom: 75px;
 }
 
 .products .item .item-container .item-img {
     width: 250p;
-    height: 60%;
+    height: 70%;
     background-color: white;
     border: 1px solid #000;
     border-radius: 25px 25px 0 0;
