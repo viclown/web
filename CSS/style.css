@@ -421,7 +421,7 @@ html {
 .products-list {
     width: 100vw;
     height: 88vh;
-    padding-top: 100px;
+    padding-top: 12vh;
     display: flex;
 }
 
@@ -434,7 +434,7 @@ html {
 }
 
 .products img {
-    width: 140px;
+    width: 135px;
 }
 
 .products .item {
