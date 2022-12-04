@@ -17,15 +17,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    font-family: "Chilanka", cursive;
+    font-style: normal;
+    font-size: 1rem;
     margin: 0;
-    font-family: "URW Chancery L", cursive;
-    font-size: 15px;
     line-height: 1.25;
     text-align: left;
     background-color: white;
     color: black;
     font-weight: normal;
     text-transform: none;
+    letter-spacing: normal;
 }
 
 .header {
@@ -49,17 +51,15 @@ body {
 .logo {
     vertical-align: center;
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     padding: 2px 20px;
     color: white;
 }
 
 nav a {
     position: relative;
-    display: inline-block;
-    vertical-align: center;
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     color: white;
     padding: 2px 20px;
     text-decoration: none;
@@ -73,12 +73,6 @@ nav a:is(:link, :active, :visited).active {
     background-color: salmon;
     color: black;
 }
-
-/*
-.intro:hover~.nav_link_1 {
-    color: salmon;
-}
-*/
 
 .intro {
     display: flex;
@@ -96,8 +90,7 @@ nav a:is(:link, :active, :visited).active {
 }
 
 .name {
-    font-size: 150px;
-    font-weight: 800;
+    font-size: 10rem;
     text-align: center;
     font-family: "Chewy", sans-serif;
     text-transform: uppercase;
@@ -105,6 +98,7 @@ nav a:is(:link, :active, :visited).active {
 
 .slogan {
     text-align: center;
+    word-spacing: 2px;
 }
 
 .collection {
@@ -119,13 +113,13 @@ nav a:is(:link, :active, :visited).active {
 }
 
 .suptitle {
-    font-size: 24px;
+    font-size: 1.6rem;
+    word-spacing: 2px;
 }
 
 .title {
     font-family: "Chewy", sans-serif;
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -133,7 +127,7 @@ nav a:is(:link, :active, :visited).active {
 .bombs {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: white;
     flex-wrap: wrap;
 }
 
@@ -151,8 +145,7 @@ nav a:is(:link, :active, :visited).active {
 
 .bomb_name {
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -177,31 +170,26 @@ nav a:is(:link, :active, :visited).active {
     border-collapse: collapse;
     min-width: 90%;
     margin: auto 5%;
-    grid-template-columns: 31% 23% 23% 23%;
-    font-size: 18px;
+    grid-template-columns: repeat(4, auto);
+    font-size: 1.5rem;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
 }
 
 thead, tbody, tr {
     display: contents;
 }
 
-table {
-    border-collapse: collapse;
-    border: 2px solid black;
-    background-color: white;
-    font-size: 20px;
-}
-
 td, th {
     border: 1px solid #403e3e;
     padding: 10px;
     text-align: center;
-    vertical-align: center;
 }
 
 th {
-    font-size: 24px;
-    background-color: #d4ffe4; /* #f99 */
+    font-size: 1.6rem;
+    background-color: #d4ffe4;
 }
 
 tr:nth-child(even) td {
@@ -223,8 +211,7 @@ caption {
 
 .contacts_header {
     font-family: "Chewy", sans-serif;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     padding-top: 20px;
@@ -232,19 +219,19 @@ caption {
 
 .contact_list {
     list-style-type: none;
-    font-size: 24px;
+    font-size: 1.6rem;
+    word-spacing: 2px;
 }
 
 .loading_time {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
 }
 
 /* description pages */
 
 .name_desc {
-    font-size: 100px;
-    font-weight: 800;
+    font-size: 7rem;
     text-align: center;
     font-family: "Chewy", sans-serif;
     text-transform: uppercase;
@@ -253,7 +240,7 @@ caption {
 
 .description {
     margin-left: 50px;
-    font-size: 24px;
+    font-size: 1.6rem;
     text-align: justify;
     vertical-align: center;
 }
@@ -282,8 +269,7 @@ caption {
 .info_body {
     max-height: 0;
     overflow: hidden;
-    font-size: 15px;
-    padding-top: 10px;
+    font-size: 1rem;
     text-transform: lowercase;
 }
 
@@ -305,7 +291,7 @@ caption {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 3rem;
     padding: 0.2em;
     width: 1.5em;
     height: 1.5em;
@@ -314,6 +300,7 @@ caption {
     background: pink;
     margin-bottom: 40px;
     text-decoration: none;
+    font-family: "";
 }
 
 .button::before {
@@ -329,69 +316,72 @@ caption {
 
 @media only screen
 and (max-width: 1000px)
-and (min-width: 480px) {
-    .body {
-        font-family: "Chilanka", cursive;
-    }
-
+and (min-width: 510px) {
     .nav_link {
-        font-size: 23px;
-        padding-right: 20px;
+        font-size: 1.3rem;
+        padding-right: 8px;
     }
 
     .logo {
-        font-size: 23px;
+        font-size: 1.3rem;
     }
 
     .slogan {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .suptitle {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .title {
-        font-size: 70px;
+        font-size: 5rem;
     }
 
     .contacts_header {
-        font-size: 25px;
+        font-size: 1.6rem;
     }
 
     table {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     .th {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media only screen
-and (max-width: 480px) {
-    .body {
-        font-family: "Chilanka", cursive;
+and (max-width: 510px) {
+    .header_inner {
+        display: none;
     }
 
-    .nav_link {
-        font-size: 25px;
-        padding-right: 20px;
-    }
-
-    .logo {
-        font-size: 25px;
+    .name {
+        font-size: 5rem;
     }
 
     .slogan {
-        font-size: 80px;
+        font-size: 1.5rem;
     }
 
-    table {
-        font-size: 18px;
+    .suptitle {
+        font-size: 1.1rem;
     }
 
-    .th {
-        font-size: 20px;
+    .title {
+        font-size: 3rem;
+    }
+
+    .table {
+        font-size: 1.2rem;
+    }
+
+    th {
+        font-size: 1.2rem;
+    }
+
+    .contacts_header {
+        font-size: 1.5rem;
     }
 }
