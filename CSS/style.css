@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 15px;
 }
 
 .logo {
@@ -49,7 +50,6 @@ body {
     font-size: 2rem;
     color: black;
     padding-right: 40px;
-    padding-top: 15px;
     text-decoration: none;
 }
 
@@ -92,12 +92,12 @@ body {
     text-align: center;
 }
 
-.section_suptitle {
+.suptitle {
     font-size: 1.6rem;
     word-spacing: 2px;
 }
 
-.section_title {
+.title {
     font-family: "Chewy", sans-serif;
     font-size: 5rem;
     font-weight: 800;
@@ -107,20 +107,21 @@ body {
 
 .bombs {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #fff;
     flex-wrap: wrap;
 }
 
 .bomb_item {
-    width: 33%;
+    width: 400px;
 }
 
 .bomb_image img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 20px;
+
     box-shadow: 0 0 5px 2px pink;
 }
 
@@ -131,6 +132,53 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.table_class {
+    padding: 40px 0;
+    background-color: #fed3dd;
+}
+
+.table_inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 90%;
+    margin: auto 5%;
+    grid-template-columns: repeat(4, auto);
+    font-size: 1.5rem;
+    border: 2px solid black;
+    background-color: white;
+}
+
+thead, tbody, tr {
+    display: contents;
+}
+
+td, th {
+    border: 1px solid #403e3e;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+th {
+    font-size: 1.6rem;
+    background-color: #d4ffe4; /* #f99 */
+}
+
+tr:nth-child(even) td {
+    background-color: #fffcd4;
+}
+
+caption {
+    padding: 10px;
 }
 
 .footer {
@@ -155,4 +203,84 @@ body {
     list-style-type: none;
     font-size: 1.6rem;
     word-spacing: 2px;
+}
+
+@media only screen
+and (max-width: 1000px)
+and (min-width: 510px) {
+    .body {
+        font-family: "Chilanka", cursive;
+    }
+
+    .nav_link {
+        font-size: 1.3rem;
+        padding-right: 8px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .slogan {
+        font-size: 1.25rem;
+    }
+
+    .suptitle {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .contacts_header {
+        font-size: 1.6rem;
+    }
+
+    table {
+        font-size: 1.2rem;
+    }
+
+    .th {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen
+and (max-width: 510px) {
+    .header_inner {
+        display: none;
+    }
+
+    .body {
+        font-family: "Chilanka", cursive;
+    }
+
+    .name {
+        font-size: 5rem;
+    }
+
+    .slogan {
+        font-size: 1.5rem;
+    }
+
+    .suptitle {
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .table {
+        font-size: 1.2rem;
+    }
+
+    th {
+        font-size: 1.2rem;
+    }
+
+    .contacts_header {
+        font-size: 1.5rem;
+    }
 }
