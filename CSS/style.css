@@ -1,31 +1,39 @@
+* {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.bomb_item a:-webkit-any-link {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.bomb_item a:hover {
+    color: salmon;
+}
+
 body {
-    margin: 0;
     font-family: "Chilanka", cursive;
     font-style: normal;
     font-size: 1rem;
+    margin: 0;
     line-height: 1.25;
     text-align: left;
     background-color: white;
     color: black;
     font-weight: normal;
     text-transform: none;
-    text-indent: 1em;
     letter-spacing: normal;
 }
 
 .header {
     width: 100%;
-    position: absolute;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    position: fixed;
+    background-color: black;
 }
 
 .header_inner {
@@ -35,22 +43,36 @@ body {
     padding-top: 15px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .logo {
     vertical-align: center;
     font-family: "Chewy", sans-serif;
     font-size: 2rem;
-    padding-left: 40px;
-    color: black;
+    padding: 2px 20px;
+    color: white;
 }
 
-.nav_link {
-    display: inline-block;
-    vertical-align: center;
+nav a {
+    position: relative;
     font-family: "Chewy", sans-serif;
     font-size: 2rem;
-    color: black;
-    padding-right: 40px;
+    color: white;
+    padding: 2px 20px;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: salmon;
+}
+
+nav a:is(:link, :active, :visited).active {
+    background-color: salmon;
+    color: black;
 }
 
 .intro {
@@ -70,7 +92,6 @@ body {
 
 .name {
     font-size: 10rem;
-    font-weight: 800;
     text-align: center;
     font-family: "Chewy", sans-serif;
     text-transform: uppercase;
@@ -100,7 +121,6 @@ body {
 .title {
     font-family: "Chewy", sans-serif;
     font-size: 5rem;
-    font-weight: 800;
     text-align: center;
     text-transform: uppercase;
 }
@@ -108,7 +128,7 @@ body {
 .bombs {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: white;
     flex-wrap: wrap;
 }
 
@@ -121,20 +141,20 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
-
     box-shadow: 0 0 5px 2px pink;
 }
 
 .bomb_name {
     font-family: "Chewy", sans-serif;
     font-size: 2rem;
-    font-weight: 800;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
 }
 
-.table_class {
+.price {
     padding: 40px 0;
     background-color: #fed3dd;
 }
@@ -155,6 +175,7 @@ body {
     font-size: 1.5rem;
     border: 2px solid black;
     background-color: white;
+    color: black;
 }
 
 thead, tbody, tr {
@@ -165,12 +186,11 @@ td, th {
     border: 1px solid #403e3e;
     padding: 10px;
     text-align: center;
-    vertical-align: center;
 }
 
 th {
     font-size: 1.6rem;
-    background-color: #d4ffe4; /* #f99 */
+    background-color: #d4ffe4;
 }
 
 tr:nth-child(even) td {
@@ -193,7 +213,6 @@ caption {
 .contacts_header {
     font-family: "Chewy", sans-serif;
     font-size: 2rem;
-    font-weight: 800;
     text-align: center;
     text-transform: uppercase;
     padding-top: 20px;
@@ -205,13 +224,100 @@ caption {
     word-spacing: 2px;
 }
 
+.loading_time {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* description pages */
+
+.name_desc {
+    font-size: 7rem;
+    text-align: center;
+    font-family: "Chewy", sans-serif;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.description {
+    margin-left: 50px;
+    font-size: 1.6rem;
+    text-align: justify;
+    vertical-align: center;
+}
+
+.text_and_image {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.bomb_image_desc img {
+    width: 500px;
+    box-shadow: 0 0 5px 2px pink;
+}
+
+.info {
+    background-color: pink;
+    padding: 15px;
+}
+
+.info_switch {
+    display: none;
+}
+
+.info_body {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+
+.info_switch:checked~.info_body {
+    max-height: 500px;
+}
+
+.info_headline {
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 0.2em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    color: black;
+    background: pink;
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-family: "";
+}
+
+.button::before {
+    content: attr(data-char);
+    font-size: 1em;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white
+}
+
 @media only screen
 and (max-width: 1000px)
 and (min-width: 510px) {
-    .body {
-        font-family: "Chilanka", cursive;
-    }
-
     .nav_link {
         font-size: 1.3rem;
         padding-right: 8px;
@@ -250,10 +356,6 @@ and (min-width: 510px) {
 and (max-width: 510px) {
     .header_inner {
         display: none;
-    }
-
-    .body {
-        font-family: "Chilanka", cursive;
     }
 
     .name {
