@@ -49,6 +49,12 @@ body {
     margin: 0 auto;
 }
 
+.text-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .logo {
     vertical-align: center;
     font-family: "Chewy", sans-serif;
@@ -124,7 +130,6 @@ nav a:is(:link, :active, :visited).active {
 }
 
 .swiper-slide {
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,20 +141,24 @@ nav a:is(:link, :active, :visited).active {
 
 .slide-1 {
     background: url("../images/clouds.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .slide-2 {
-    background: url("../images/slider/xmas.jpg") center no-repeat;
+    background: url("../images/slider/xmas.jpg") center;
+    background-size: cover;
     color: black;
 }
 
 .slide-3 {
     background: url("../images/slider/delivery.png") center no-repeat;
+    background-size: cover;
     color: black;
 }
 
 .slide-4 {
     background: url("../images/slider/cheboksary.jpg") center no-repeat;
+    background-size: cover;
     font-size: 2rem;
     text-align: center;
     font-family: Bradley Hand, cursive;
@@ -402,7 +411,7 @@ caption {
 }
 
 @media only screen
-and (max-width: 1000px)
+and (max-width: 1200px)
 and (min-width: 510px) {
     .nav_link {
         font-size: 1.3rem;
@@ -437,8 +446,17 @@ and (min-width: 510px) {
         font-size: 1.25rem;
     }
 
-    .products {
-        grid-template-columns: repeat(1, 1fr);
+    .xmas-shop {
+        font-size: 5rem;
+    }
+
+    .sale {
+        font-size: 3rem;
+    }
+
+    .swiper-button-next img, .swiper-button-prev img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -476,8 +494,21 @@ and (max-width: 510px) {
         font-size: 1.5rem;
     }
 
-    .products {
-        grid-template-columns: repeat(1, 1fr);
+    .xmas-shop {
+        font-size: 2rem;
+    }
+
+    .sale {
+        font-size: 1rem;
+    }
+
+    .swiper-button-next img, .swiper-button-prev img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .xmas-shop {
+        margin-bottom: 50px;
     }
 }
 
