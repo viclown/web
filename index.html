@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>bubbly</title>
     <meta name="keywords" content="bubbly, bath, bath bombs, chill, accessories">
     <meta name="description" content="bubbly">
+
     <link rel="stylesheet" href="CSS/style.css"/>
+
+    <!-- Import Swiper styles  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Chilanka&display=swap" rel="stylesheet">
+
     <script src="JS/page_loading_time.js"></script>
     <script defer src="JS/active_button_menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -25,14 +31,66 @@
         </div>
     </header>
     <main>
-        <div class="intro">
-            <div class="container">
-                <div class="intro_inner">
-                    <h1 class="name">bubbly</h1>
-                    <h2 class="slogan">become bubbly with our bath bombs!</h2>
+        <section class="swiper-section">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="intro_inner">
+                            <h1 class="name">bubbly</h1>
+                            <h2 class="slogan">become bubbly with our bath bombs!</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="container">
+                            <h2 class="xmas-shop">what about some christmas shopping?</h2>
+                            <h3 class="sale">sale  10%</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div class="container">
+                            <h2 class="xmas-shop">2 items or more <br> free delivery</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-4">
+                        <div class="container">
+                            это родные Чебоксары, в которые мне очень хочется уехать в пятницу, отпустите без правок, пожалуйста.......
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"><img src="icons/previous.png" alt=""></div>
+                <div class="swiper-button-next"><img src="icons/next.png" alt=""></div>
             </div>
-        </div>
+        </section>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                slidesPerView: 1,
+                keyboard: {
+                    enabled: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        </script>
+
         <section class="collection">
             <div class="container">
                 <div class="section_header">
