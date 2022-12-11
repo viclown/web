@@ -737,7 +737,7 @@ button {
     padding: 10px;
     background-color: #ffb3c0;
     border-radius: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .button_review:hover {
@@ -760,12 +760,12 @@ button {
 }
 
 .review_item strong {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .review_item div {
     margin-top: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 template {
