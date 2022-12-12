@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bubbly reviews</title>
+  <meta name="keywords" content="bubbly, bath, bath bombs, chill, accessories">
+  <meta name="description" content="bubbly">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Chilanka&display=swap" rel="stylesheet">
+  <script src="JS/page_loading_time.js"></script>
+  <script src="JS/reviews.js"></script>
+  <script defer src="JS/active_button_menu.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header_inner">
+      <div class="logo">bubbly</div>
+      <nav class="navigation">
+        <a href="index.html">home</a>
+        <a href="reviews.html">reviews</a>
+        <a href="cart.html">cart</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="review_block">
+    <div class="container">
+      <div class="review_info">
+        <button id="getButton" class="button_review" type="button">Load reviews about our bombs!!</button>
+        <div id="loading"></div>
+        <div id="reviews" class="reviews"></div>
+        <template id="review_item">
+          <div class="review_item">
+            <span></span>
+            <strong></strong>
+            <div></div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <section class="contacts">
+      <div class="contacts_header">
+        <h1>do you have any questions?</h1>
+      </div>
+      <ol class='contact_list'>
+        <li>call us: +7 123 456 78 90</li>
+        <li>text us: bubbly@mail.ru</li>
+      </ol>
+    </section>
+    <div class="loading_time">
+      <span id="load_time"></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

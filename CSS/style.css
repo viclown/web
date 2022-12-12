@@ -356,6 +356,7 @@ caption {
 .info {
     background-color: pink;
     padding: 15px;
+    margin-bottom: 10px;
 }
 
 .info_switch {
@@ -706,4 +707,87 @@ html {
 .cart-footer .checkout {
     background-color: salmon;
     cursor: pointer;
+}
+
+
+
+
+.review_block {
+    background: url("../images/clouds-opacity.png") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+}
+
+.review_info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-size: 2.5rem;
+    font-family: "Chewy", sans-serif;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffb3c0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.button_review:hover {
+    background-color: #ff92a3 !important;
+    cursor: pointer;
+}
+
+.review_item {
+    color: black;
+    margin: 12px 5px 0;
+    padding: 10px;
+    background-color: #ffb3c0;
+    border-radius: 10px;
+    border: 2px dashed black;
+}
+
+.review_item span {
+    float: right;
+    font-size: 1.2rem;
+}
+
+.review_item strong {
+    font-size: 1.3rem;
+}
+
+.review_item div {
+    margin-top: 5px;
+    
+    font-size: 1rem;
+}
+
+template {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loading {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: black black black transparent;
+    border-radius: 50%;
+    animation: loadingAnimation 1.2s linear infinite;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
