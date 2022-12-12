@@ -34,18 +34,23 @@ body {
     width: 100%;
     position: fixed;
     background-color: black;
-    z-index: 1;
+    z-index: 100;
 }
 
 .header_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
 }
 
 .container {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -101,6 +106,95 @@ nav a:is(:link, :active, :visited).active {
 .slogan {
     text-align: center;
     word-spacing: 2px;
+    font-family: "Chilanka", sans-serif;
+    text-transform: none;
+}
+
+.swiper-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fed3dd;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Chewy, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slide-1 {
+    background: url("../images/clouds.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.slide-2 {
+    background: url("../images/slider/xmas.jpg") center;
+    background-size: cover;
+    color: black;
+}
+
+.slide-3 {
+    background: url("../images/slider/delivery.png") center no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.slide-4 {
+    background: url("../images/slider/cheboksary.jpg") center no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Bradley Hand, cursive;
+    color: white;
+}
+
+.xmas-shop {
+    font-size: 7rem;
+    padding-bottom: 50px;
+    line-height: 1;
+}
+
+.sale {
+    font-size: 5rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    background-color: grey;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: salmon;
+}
+
+.swiper-button-prev {
+    margin-left: 30px;
+}
+
+.swiper-button-next {
+    margin-right: 30px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
 }
 
 .collection {
@@ -317,7 +411,7 @@ caption {
 }
 
 @media only screen
-and (max-width: 1000px)
+and (max-width: 1200px)
 and (min-width: 510px) {
     .nav_link {
         font-size: 1.3rem;
@@ -350,6 +444,19 @@ and (min-width: 510px) {
 
     .th {
         font-size: 1.25rem;
+    }
+
+    .xmas-shop {
+        font-size: 5rem;
+    }
+
+    .sale {
+        font-size: 3rem;
+    }
+
+    .swiper-button-next img, .swiper-button-prev img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -385,6 +492,23 @@ and (max-width: 510px) {
 
     .contacts_header {
         font-size: 1.5rem;
+    }
+
+    .xmas-shop {
+        font-size: 2rem;
+    }
+
+    .sale {
+        font-size: 1rem;
+    }
+
+    .swiper-button-next img, .swiper-button-prev img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .xmas-shop {
+        margin-bottom: 50px;
     }
 }
 
